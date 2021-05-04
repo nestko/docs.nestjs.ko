@@ -4,14 +4,14 @@
 
 ### 첫단계
 
-이 글에서는 Nest의 **core fundamentals** 에 대해 배울것 입니다. Nest application들의 필수 조각들과 익숙해지기 위해 입문수준에서 많은 부분을 소화할수 있는 기본적인 CRUD applicaiton을 구축할것 입니다.
+이 글에서는 Nest의 **core fundamentals** 에 대해 배울것 입니다. Nest application들의 필수 조각들과 익숙해지기 위해 입문수준에서 많은 부분을 소화할 수 있는 기본적인 CRUD applicaiton을 구축할것 입니다.
 
 #### 언어
 
 [TypeScript](https://www.typescriptlang.org/)와 [Node.js](https://nodejs.org/en/)를 선호합니다. 이것이 Nest가 Typescript와 **pure Javascript**를 사용할 수 있는 이유입니다.
 Nest는 최신 언어 기능을 활용하므로 vanilla Javascript와 함께 사용하려면 [Babel](https://babeljs.io/) 컴파일러를 필요로 합니다.
 
-제공된 예시들은 대개 TypeScript를 사용하고 있습니다. 그러나 항상 vanilla Javascript로 제공된 코드도 확인할수 있습니다(예시의 우상단에 언어 변환 버튼을 클릭해주세요)
+제공된 예시들은 대개 TypeScript를 사용하고 있습니다. 그러나 항상 vanilla Javascript로 제공된 코드도 확인할 수 있습니다(예시의 우상단에 언어 변환 버튼을 클릭해주세요)
 
 #### 전제조건
 
@@ -19,7 +19,7 @@ Nest는 최신 언어 기능을 활용하므로 vanilla Javascript와 함께 사
 
 #### 설정
 
-[Nest CLI](/cli/overview)를 이용하면 기본 프로젝트 세팅은 굉장히 간단합니다. 설치되어있는 [npm](https://www.npmjs.com/)를 이용하여 OS 터미널 에서 아래의 명령어로 Nest 프로젝트를 생성할수 있습니다.
+[Nest CLI](/cli/overview)를 이용하면 기본 프로젝트 세팅은 굉장히 간단합니다. 설치되어있는 [npm](https://www.npmjs.com/)를 이용하여 OS 터미널 에서 아래의 명령어로 Nest 프로젝트를 생성할 수 있습니다.
 
 ```bash
 $ npm i -g @nestjs/cli
@@ -93,7 +93,7 @@ Nest는 플랫폼에 구애받지 않는 framework를 지향합니다. 플랫폼
 
 어느 플랫폼을 사용하든 자체 interface를 표시합니다. `NestExpressApplication` 과 `NestFastifyApplication` 으로 각각 확인할 수 있습니다. 
 
-아래의 예시에서와 같이 `NestFactory.create()` method로 type을 제공할때 `app` 객체는 특정 플랫폼에 대해서만 사용할수 있는 method가 있습니다. 
+아래의 예시에서와 같이 `NestFactory.create()` method로 type을 제공할때 `app` 객체는 특정 플랫폼에 대해서만 사용할 수 있는 method가 있습니다. 
 그러나 기본 platform API에 접근하려는 경우가 아니면 type을 지정할 필요가 없습니다.
 
 ```typescript
@@ -109,4 +109,4 @@ $ npm run start
 
 위 명령어는 `src/main.ts` 파일에 정의 되어있는 포트를 수신하는 http 서버를 실행 시킵니다. 
 application이 실행되면 브라우저를 열고 `http://localhost:3000` 으로 이동하세요. 
-`Hello World!` 명령어를 확인할수 있습니다.
+`Hello World!` 명령어를 확인할 수 있습니다.
