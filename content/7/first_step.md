@@ -8,8 +8,8 @@
 
 #### 언어
 
-[TypeScript](https://www.typescriptlang.org/)와 [Node.js](https://nodejs.org/en/)를 선호합니다. 이것이 Nest가 Typescript와 **pure Javascript**를 사용할수 잇는 이유입니다.
-Nest는 최신 언어 긴능을 활용하므로 vanilla Javascript와 함께 사용하려면 [Babel](https://babeljs.io/) 컴파일러를 필요로 합니다.
+[TypeScript](https://www.typescriptlang.org/)와 [Node.js](https://nodejs.org/en/)를 선호합니다. 이것이 Nest가 Typescript와 **pure Javascript**를 사용할 수 있는 이유입니다.
+Nest는 최신 언어 기능을 활용하므로 vanilla Javascript와 함께 사용하려면 [Babel](https://babeljs.io/) 컴파일러를 필요로 합니다.
 
 제공된 예시들은 대개 TypeScript를 사용하고 있습니다. 그러나 항상 vanilla Javascript로 제공된 코드도 확인할수 있습니다(예시의 우상단에 언어 변환 버튼을 클릭해주세요)
 
@@ -74,7 +74,7 @@ bootstrap();
 ```
 
 Nest applicaiton 인스턴스를 생성하기 위해 `NestFactory` 클래스를 이용합니다. `NestFactory`는 application 인스턴스를 생성하는 몇개의 static method들을 보여줍니다.
-`create()` method는 `INestApplication` interface를 수행하는 application 객체를 반환합니다. 이 객체는 이후 챕터에서 확인할수 있는 몇가지 metho들을 제공합니다. `main.ts` 예제에서 
+`create()` method는 `INestApplication` interface를 수행하는 application 객체를 반환합니다. 이 객체는 이후 챕터에서 확인할 수 있는 몇가지 metho들을 제공합니다. `main.ts` 예제에서 
 http 요청에 응답 대기하는 http listener를 간단하게 시작할 것입니다.
 
 Nest ClI로 생성한 초기의 프로젝트 구조는 개발자로 하여금 각 모듈을 전용 directory에 포함하는 convention을 따르기를 권장합니다
@@ -91,7 +91,7 @@ Nest는 플랫폼에 구애받지 않는 framework를 지향합니다. 플랫폼
 | `platform-express` | [Express](https://expressjs.com/)는 잘알려진 소규모의 node 웹 프레임워크 입니다. 이것은 전투적으로 테스트된, 많은 커뮤니티에서 실행된 수많은 리소스를 가진 production-ready 라이브러리 입니다. `@nestjs/platform-express` package는 default로 사용됩니다. 많은 사용자들이 express를 잘 이용하고 있기 때문에 실행시키기 위한 특별한 action은 필요 없습니다. |
 | `platform-fastify` | [Fastify](https://www.fastify.io/)는 최고의 효율성과 속도를 제공하는데 중점을 둔 높은 성능과 적은 overhead를 가진 프레임워크 입니다. [here](/techniques/performance) 를 사용하기 위해 확인해주세요.                                                                                                                                  |
 
-어느 플랫폼을 사용하든 자체 interface를 표시합니다. `NestExpressApplication` 과 `NestFastifyApplication` 으로 각각 확인할수 있습니다. 
+어느 플랫폼을 사용하든 자체 interface를 표시합니다. `NestExpressApplication` 과 `NestFastifyApplication` 으로 각각 확인할 수 있습니다. 
 
 아래의 예시에서와 같이 `NestFactory.create()` method로 type을 제공할때 `app` 객체는 특정 플랫폼에 대해서만 사용할수 있는 method가 있습니다. 
 그러나 기본 platform API에 접근하려는 경우가 아니면 type을 지정할 필요가 없습니다.
